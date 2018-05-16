@@ -1,7 +1,16 @@
 XBRL
 ===
 
-*Parsing and navigating XBRL documents*
+Features
+---
+
+- [ ] (P0) Parse XBRL instance documents
+- [ ] (P0) Parse XBRL linkbases
+  - [ ] (P2) Calculation linkbase
+  - [ ] (P2) Definition linkbase
+  - [ ] (P1) Label linkbase
+  - [ ] (P0) Presentation linkbase
+- [ ] (P0) Parse XBRL schemas
 
 Classes
 ---
