@@ -1,6 +1,3 @@
-XBRL
-===
-
 Features
 ---
 

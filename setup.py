@@ -14,12 +14,8 @@ from os.path import abspath, dirname, join
 here = abspath(dirname(__file__))
 
 # Get the long description from the README file
-try:
-    import pypandoc
-    long_description = pypandoc.convert(join(here, 'README.md'), 'rst')
-except (IOError, ImportError):
-    with open(join(here, 'README.md')) as f:
-        long_description = f.read()
+with open(join(here, 'README.md')) as f:
+    long_description = f.read()
 
 setup(
     name='xbrl',
@@ -27,17 +23,18 @@ setup(
     # Versions should comply with PEP440.  For a discussion on single-sourcing
     # the version across setup.py and the project code, see
     # https://packaging.python.org/en/latest/single_source_version.html
-    version='0.0.0',
+    version='0.0.1',
 
     description='Parsing and navigating XBRL documents',
     long_description=long_description,
+    long_description_content_type='text/markdown',
 
     # The project's main homepage.
     url='https://github.com/divbzero/xbrl',
 
     # Author details
-    author='William Go',
-    author_email='will@divbzero.com',
+    author='Chris Lei',
+    author_email='chris@divbzero.com',
 
     # Choose your license
     license='MIT',
@@ -65,6 +62,9 @@ setup(
         'Programming Language :: Python :: 3',
         'Programming Language :: Python :: 3.5',
         'Programming Language :: Python :: 3.6',
+        'Programming Language :: Python :: 3.7',
+        'Programming Language :: Python :: 3.8',
+        'Programming Language :: Python :: 3.9',
 
         # Related topics
         'Topic :: Office/Business',

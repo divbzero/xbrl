@@ -1,3 +1,2 @@
-pypandoc
 twine
 wheel
